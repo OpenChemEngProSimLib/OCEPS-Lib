@@ -1,0 +1,82 @@
+
+************************************************************************************************************************
+*                                                                                                                      *
+*                                             You are using MAiNGO v0.7.1                                              *
+*                                                                                                                      *
+*  Please cite the latest MAiNGO report from http://permalink.avt.rwth-aachen.de/?id=729717 :                          *
+*  Bongartz, D., Najman, J., Sass, S. and Mitsos, A., MAiNGO - McCormick-based Algorithm for mixed-integer Nonlinear   *
+*  Global Optimization. Technical Report, Process Systems Engineering (AVT.SVT), RWTH Aachen University (2018).        *
+*                                                                                                                      *
+************************************************************************************************************************
+  
+  Warning: Could not open settings file .
+           Proceeding with default settings.
+
+  Major third-party software used:
+    - MC++ by B. Chachuat et al. (DAG & relaxations)
+    - Filib++ by M. Lerch et al. (interval extensions)
+    - FADBAD++ by O. Stauning and C. Bendtsen (automatic differentiation)
+    - MUMPS by P.R. Amestoy et al. (sparse linear solver)
+    - Netlib BLAS and LAPACK (linear algebra)
+    - SLSQP by D. Kraft implemented in NLopt by S.G. Johnson (local NLP solver)
+    - IPOPT by A. Waechter and L.T. Biegler (local NLP solver)
+    - CLP by J.J. Forrest et al. (LP solver)
+
+  Pre-processing at root node:
+    Initialize subsolvers...
+      Multistart: IPOPT
+      Upper bounding: SLSQP
+      Lower bounding: CLP
+    Constraint propagation...
+    Optimization-based bound tightening (feasibility only)...
+    Multistart local searches...
+      User-specified initial point is feasible with objective value 0.533333
+      Found feasible point with objective value 0.400005
+    Constraint propagation...
+    Optimization-based bound tightening (feasibility and optimality)...
+    CPU time: 0 s.
+  Done.
+
+  Entering branch-and-bound loop:
+  Iteration        LBD              UBD        NodesLeft        AbsGap           RelGap            CPU       
+          1     4.000000e-01     4.000052e-01          0     5.189237e-06     1.297292e-05     0.000000e+00  
+  Done.
+
+************************************************************************************************************************
+*                                                                                                                      *
+*                                             *** Regular termination. ***                                             *
+*                                                                                                                      *
+************************************************************************************************************************
+
+  Problem statistics: 
+    Variables                                = 1
+      Thereof continuous                     = 1
+    Inequality constraints                   = 0
+    Equality constraints                     = 0
+
+  Solution statistics: 
+    Total UBD problems solved         = 0
+    Total LBD problems solved         = 1
+    Total number of iterations        = 1
+    Maximum number of nodes in memory = 0
+    Best solution first found at iteration 0
+
+===================================================================
+
+  Final LBD          = 0.4000000059604645
+  Final absolute gap = 5.189237202551933e-06
+  Final relative gap = 1.297292451411191e-05
+  Objective value = 0.400005195197667
+  Solution point:
+    Objective = 2.594584902812936e-05
+
+===================================================================
+
+  Additional Model outputs: 
+    Value of psi:  = 0.400005195197667
+
+===================================================================
+
+  CPU time:        0.000 seconds (Preprocessing + B&B).
+  Wall-clock time: 0.020 seconds (Preprocessing + B&B).
+
