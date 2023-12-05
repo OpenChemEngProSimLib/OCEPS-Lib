@@ -78,5 +78,5 @@
 ===================================================================
 
   CPU time:        0.000 seconds (Preprocessing + B&B).
-  Wall-clock time: 0.020 seconds (Preprocessing + B&B).
+  Wall-clock time: 0.048 seconds (Preprocessing + B&B).
 
