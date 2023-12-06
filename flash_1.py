@@ -5,13 +5,11 @@ import numpy as np
 
 class psi_class:
     def __init__(self, z, k):
-        self.z = np.array(z) # Composition
-        self.k = np.array(k) # K - equilibrium
-        
-    def f_psi(self, psi): # Function of psi -> 0 
-        a = np.sum((self.z*(1 - self.k))/(1+psi*(self.k - 1)))
-        return a
+        self.z = np.array(z)  # Composition for multiple components
+        self.k = np.array(k)  # K-values for multiple components
 
+    def f_psi(self, psi):
+        return np.sum((self.z * (1 - self.k)) / (1 + psi * (self.k - 1)))
 
 #####################################################
 class Flash(MAiNGOmodel):
