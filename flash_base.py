@@ -66,6 +66,10 @@ def solve_flash(z, k):
     return maingoStatus
 
 # Now you can call the function solve_flash with different values of z and k
+
 status = solve_flash([0.1,0.2,0.3,0.4], [4.2,1.75, 0.74, 0.34])
 print(status)
+
 #print(status)
+
+
