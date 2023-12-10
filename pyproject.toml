@@ -1,0 +1,18 @@
+[project]
+name = "example_package_YOUR_USERNAME_HERE"
+version = "0.0.1"
+authors = [
+  { name = "Guillermo Alvarez Bacame", github = "https://github.com/gabacame" },
+  { name = "Jose Alfredo Paredes Ortiz", github = "https://github.com/JosePaor" }
+]
+description = "pen source library for simulating chemical processes. Perfect for academics, industry pros, and enthusiasts."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenChemEngProSimLib/OCEPS-Lib"
